@@ -1,5 +1,12 @@
 import { curry } from '../curry/curry';
 
+/**
+ * Creates a deep copy of the value.
+ *
+ * @param data - The object to clone.
+ *
+ * @category Object
+ */
 export function clone<T>(data: T): T;
 export function clone(): <T>(data: T) => T;
 export function clone(...args: ReadonlyArray<unknown>): unknown {
