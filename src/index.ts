@@ -5,3 +5,6 @@ export * from './packages/isFunction/isFunction';
 export * from './packages/clamp/clamp';
 export * from './packages/isDate/isDate';
 export * from './packages/add/add';
+export * from './packages/countBy/countBy';
+export * from './packages/values/values';
+export * from './packages/filter/filter';
