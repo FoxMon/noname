@@ -8,3 +8,4 @@ export * from './packages/add/add';
 export * from './packages/countBy/countBy';
 export * from './packages/values/values';
 export * from './packages/filter/filter';
+export * from './packages/map/map';
