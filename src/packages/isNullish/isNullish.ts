@@ -5,7 +5,7 @@ import { NarrowedType } from '../../core/types/narrowType';
  *
  * @param v - The passed parameter.
  *
- * @category Function
+ * @category Guard
  */
 export function isNullish<T>(v: T | null | undefined): v is NarrowedType<T, null | undefined> {
   return v === null || v === undefined;

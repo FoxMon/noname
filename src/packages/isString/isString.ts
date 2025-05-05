@@ -5,7 +5,7 @@ import { NarrowedType } from '../../core/types/narrowType';
  *
  * @param v - The passed parameter.
  *
- * @category Function
+ * @category Guard
  */
 export function isString<T>(v: T | string): v is NarrowedType<T, string> {
   return typeof v === 'string';
