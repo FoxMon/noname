@@ -15,3 +15,4 @@ export * from './packages/isString/isString';
 export * from './packages/isNumber/isNumber';
 export * from './packages/isNullish/isNullish';
 export * from './packages/isTruthy/isTruthy';
+export * from './packages/conditional/conditional';
