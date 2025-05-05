@@ -11,3 +11,4 @@ export * from './packages/filter/filter';
 export * from './packages/map/map';
 export * from './packages/constant/constant';
 export * from './packages/when/when';
+export * from './packages/isString/isString';
