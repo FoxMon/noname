@@ -12,3 +12,4 @@ export * from './packages/map/map';
 export * from './packages/constant/constant';
 export * from './packages/when/when';
 export * from './packages/isString/isString';
+export * from './packages/isNumber/isNumber';
