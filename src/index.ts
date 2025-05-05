@@ -9,3 +9,5 @@ export * from './packages/countBy/countBy';
 export * from './packages/values/values';
 export * from './packages/filter/filter';
 export * from './packages/map/map';
+export * from './packages/constant/constant';
+export * from './packages/when/when';
