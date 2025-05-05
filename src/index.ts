@@ -16,3 +16,4 @@ export * from './packages/isNumber/isNumber';
 export * from './packages/isNullish/isNullish';
 export * from './packages/isTruthy/isTruthy';
 export * from './packages/conditional/conditional';
+export * from './packages/subtract/subtract';
