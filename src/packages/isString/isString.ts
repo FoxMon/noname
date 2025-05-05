@@ -1,7 +1,7 @@
 import { NarrowedType } from '../../core/types/narrowType';
 
 /**
- * Checks the passed value is string.
+ * Check if the passed value is string then returns `true`.
  *
  * @param v - The passed parameter.
  *
