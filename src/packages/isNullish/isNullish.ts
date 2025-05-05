@@ -1,4 +1,4 @@
-import { NarrowedType } from '../../core/types/narrowType';
+import { NarrowedType } from '../../core/types/narrowType.type';
 
 /**
  * Check if the passed value is nullish then returns `true`.

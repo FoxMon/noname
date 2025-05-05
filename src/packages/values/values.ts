@@ -1,6 +1,6 @@
 import { curry } from '../curry/curry';
 import type { Iterable } from '../../core/types/iterable.type';
-import type { EnumerableStringKey } from '../../core/types/enumarableStringKey';
+import type { EnumerableStringKey } from '../../core/types/enumerableStringKey.type';
 
 type Values<T extends object> =
   T extends Iterable<T> ? Array<T[number]> : Array<EnumerableStringKey<T>>;
