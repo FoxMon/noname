@@ -14,3 +14,4 @@ export * from './packages/when/when';
 export * from './packages/isString/isString';
 export * from './packages/isNumber/isNumber';
 export * from './packages/isNullish/isNullish';
+export * from './packages/isTruthy/isTruthy';
