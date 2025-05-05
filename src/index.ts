@@ -18,3 +18,4 @@ export * from './packages/isTruthy/isTruthy';
 export * from './packages/conditional/conditional';
 export * from './packages/subtract/subtract';
 export * from './packages/sum/sum';
+export * from './packages/prop/prop';
