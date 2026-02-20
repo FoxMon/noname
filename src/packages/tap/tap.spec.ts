@@ -20,7 +20,13 @@ describe('tap()', () => {
 
   test('lazy — called per element in pipe', () => {
     let callCount = 0;
-    const result = pipe([1, 2, 3], map((x) => x * 2), tap(() => { callCount += 1; }));
+    const result = pipe(
+      [1, 2, 3],
+      map((x) => x * 2),
+      tap(() => {
+        callCount += 1;
+      }),
+    );
     expect(result).toStrictEqual([2, 4, 6]);
     expect(callCount).toBe(3);
   });

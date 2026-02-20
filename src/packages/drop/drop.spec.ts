@@ -13,7 +13,11 @@ describe('drop()', () => {
   });
 
   test('lazy — combined with map in pipe', () => {
-    const result = pipe([1, 2, 3, 4, 5], drop(2), map((x) => x * 10));
+    const result = pipe(
+      [1, 2, 3, 4, 5],
+      drop(2),
+      map((x) => x * 10),
+    );
     expect(result).toStrictEqual([30, 40, 50]);
   });
 });

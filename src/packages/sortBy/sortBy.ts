@@ -12,13 +12,8 @@ import { curry } from '../curry/curry';
  *
  * @category Array
  */
-export function sortBy<T>(
-  data: ReadonlyArray<T>,
-  fn: (item: T) => number | string,
-): Array<T>;
-export function sortBy<T>(
-  fn: (item: T) => number | string,
-): (data: ReadonlyArray<T>) => Array<T>;
+export function sortBy<T>(data: ReadonlyArray<T>, fn: (item: T) => number | string): Array<T>;
+export function sortBy<T>(fn: (item: T) => number | string): (data: ReadonlyArray<T>) => Array<T>;
 export function sortBy(...args: ReadonlyArray<unknown>): unknown {
   return curry(sortByImpl, args);
 }

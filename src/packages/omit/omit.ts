@@ -22,9 +22,13 @@ export function omit(...args: ReadonlyArray<unknown>): unknown {
   return curry(omitImpl, args);
 }
 
-function omitImpl<T extends object, K extends keyof T>(data: T, keys: ReadonlyArray<K>): Omit<T, K> {
+function omitImpl<T extends object, K extends keyof T>(
+  data: T,
+  keys: ReadonlyArray<K>,
+): Omit<T, K> {
   const keysToOmit = new Set<PropertyKey>(keys);
-  return Object.fromEntries(
-    Object.entries(data).filter(([key]) => !keysToOmit.has(key)),
-  ) as Omit<T, K>;
+  return Object.fromEntries(Object.entries(data).filter(([key]) => !keysToOmit.has(key))) as Omit<
+    T,
+    K
+  >;
 }

@@ -13,7 +13,11 @@ describe('take()', () => {
   });
 
   test('lazy — early termination in pipe', () => {
-    const result = pipe([1, 2, 3, 4, 5], map((x) => x * 2), take(3));
+    const result = pipe(
+      [1, 2, 3, 4, 5],
+      map((x) => x * 2),
+      take(3),
+    );
     expect(result).toStrictEqual([2, 4, 6]);
   });
 });
